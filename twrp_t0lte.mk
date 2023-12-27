@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-DEVICE_PATH := device/samsung/a12s
+DEVICE_PATH := device/samsung/t0lte
 
 # Release name
-PRODUCT_RELEASE_NAME := a12s
+PRODUCT_RELEASE_NAME := t0lte
 
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
@@ -27,18 +27,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/a12s/device.mk)
+$(call inherit-product, device/samsung/t0lte/device.mk)
 
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/a12s/recovery/root,recovery/root)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/t0lte/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := twrp_a12s
-PRODUCT_DEVICE := a12s
-PRODUCT_MODEL := SM-A127F
+PRODUCT_NAME := twrp_t0lte
+PRODUCT_DEVICE := t0lte
+PRODUCT_MODEL := GT-N7105
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
