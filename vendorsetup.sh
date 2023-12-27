@@ -1,0 +1,1 @@
+chmod a+x device/samsung/t0lte/mkbootimg
