@@ -12,7 +12,7 @@ repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifes
 
 ## Clone repo
 ```
-git clone https://gitlab.com/HayateDevTH/android_device_samsung_t0lte -b android-11 device/samsung/t0lte
+git clone https://github.com/HayateDevTH/android_device_samsung_t0lte -b android-11 device/samsung/t0lte
 ```
 
 ## Sync repo
